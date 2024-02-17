@@ -23,7 +23,7 @@ window.onload = function () {
         // Main Style
         const main_style = document.createElement('link')
         main_style.rel = 'stylesheet';
-        main_style.href = 'style.css';
+        main_style.href = './assets/css/main_style.min.css';
         body.appendChild(main_style)
 
     }, 5000)
