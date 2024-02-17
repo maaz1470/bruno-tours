@@ -67,7 +67,7 @@ $( '.header-search-form, .search-close' ).click(function(e) {
 
 /* Mobile slick nav */
 $('#navigation').slicknav({
-  duration: 500,
+  duration: 20,
   closedSymbol: '<i class="fas fa-plus"></i>',
   openedSymbol: '<i class="fas fa-minus"></i>',
   prependTo: '.mobile-menu-container',

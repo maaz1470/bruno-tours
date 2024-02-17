@@ -2459,7 +2459,7 @@ trevi-fountain-and-virgin-acqueduct-undergrounds-tourtrevi-fountain-and-virgin-a
 }
 @media screen and (min-width: 992px) {
   .mobile-menu-container .slicknav_menu {
-    display: none;
+    visibility: hidden;
   }
 }
 .mobile-menu-container .slicknav_menu .slicknav_btn {
