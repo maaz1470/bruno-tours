@@ -3,12 +3,10 @@ window.onload = function () {
     const body = document.body;
     const head = document.head;
 
-    
-        
-        
 
 
     setTimeout(() => {
+
         
         // Ekiticons Css
         const ekiticons = document.createElement('link')
@@ -17,6 +15,7 @@ window.onload = function () {
 
         head.appendChild(ekiticons)
 
+        
         // Masonry Js
         const masonry = document.createElement('script')
         masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
@@ -31,7 +30,7 @@ window.onload = function () {
         
 
 
-    },1000)
+    },1300)
 
     setTimeout(() => {
         
