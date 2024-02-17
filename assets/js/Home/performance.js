@@ -3,6 +3,16 @@ window.onload = function () {
     const body = document.body;
 
 
+    setTimeout(() => {
+        
+        // Google font
+        const ekiticons = document.createElement('link')
+        ekiticons.rel = 'stylesheet'
+        ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
+
+        body.appendChild(ekiticons)
+
+    },2000)
 
 
     setTimeout(() => {
