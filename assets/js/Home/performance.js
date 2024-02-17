@@ -33,7 +33,7 @@ window.onload = function () {
         
 
 
-    },2500)
+    },3000)
 
     setTimeout(() => {
         
