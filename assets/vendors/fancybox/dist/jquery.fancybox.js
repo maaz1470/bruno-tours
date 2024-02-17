@@ -665,7 +665,7 @@
 
         if ($.isPlainObject(item)) {
           // We probably have manual usage here, something like
-          // $.fancybox.open( [ { src : "image.jpg", type : "image" } ] )
+          // $.fancybox.open( [ { src : "image.webp", type : "image" } ] )
 
           obj = item;
           opts = item.opts || item;
@@ -3459,7 +3459,7 @@
       paramPlace: 8,
       type: "iframe",
       url: "https://www.youtube-nocookie.com/embed/$4",
-      thumb: "https://img.youtube.com/vi/$4/hqdefault.jpg"
+      thumb: "https://img.youtube.com/vi/$4/hqdefault.webp"
     },
 
     vimeo: {
