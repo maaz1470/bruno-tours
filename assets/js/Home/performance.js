@@ -13,7 +13,18 @@ window.onload = function () {
 
         body.appendChild(ekiticons)
 
-    },2000)
+    },1500)
+
+    setTimeout(() => {
+        
+        // Font Awesome
+        const font_awesome = document.createElement('link')
+        font_awesome.rel = 'stylesheet'
+        font_awesome.href = 'assets/vendors/fontawesome/css/all.min.css';
+
+        head.appendChild(font_awesome)
+
+    }, 2500)
 
 
     setTimeout(() => {
@@ -31,13 +42,6 @@ window.onload = function () {
 
         head.appendChild(google_font)
 
-        // Google font
-        const font_awesome = document.createElement('link')
-        font_awesome.rel = 'stylesheet'
-        font_awesome.href = 'assets/vendors/fontawesome/css/all.min.css';
-
-        head.appendChild(font_awesome)
-
         // Counter Up Js
         const counterup = document.createElement('script')
         counterup.href = 'assets/vendors/counterup/jquery.counterup.min.js';
@@ -45,7 +49,7 @@ window.onload = function () {
         body.appendChild(counterup)
 
         
-        // Counter Up Js
+        // Loop Counter Js
         const loop_counter = document.createElement('script')
         loop_counter.href = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
 
@@ -54,8 +58,14 @@ window.onload = function () {
         // JQuery UI Js
         const jquery_ui = document.createElement('script')
         jquery_ui.href = 'assets/vendors/jquery-ui/jquery-ui.min.js';
-
         body.appendChild(jquery_ui)
+
+
+        // Way Point Js
+        const way_point = document.createElement('script')
+        way_point.href = 'assets/vendors/waypoint/waypoints.js';
+
+        body.appendChild(way_point)
 
 
     }, 5000)
