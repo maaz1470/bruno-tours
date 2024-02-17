@@ -20,6 +20,12 @@ window.onload = function () {
 
         body.appendChild(google_font)
 
+        // Main Style
+        const main_style = document.createElement('link')
+        main_style.rel = 'stylesheet';
+        main_style.href = 'style.css';
+        body.appendChild(main_style)
+
     }, 5000)
 
     setTimeout(() => {
