@@ -14,15 +14,20 @@ window.onload = function () {
         body.appendChild(ekiticons)
 
         
-        // // Masonry Js
-        // const masonry = document.createElement('script')
-        // masonry.href = 'assets/vendors/masonry/masonry.pkgd.min.js';
-        // body.appendChild(masonry)
+        // Masonry Js
+        const masonry = document.createElement('script')
+        masonry.href = 'assets/vendors/masonry/masonry.pkgd.min.js';
+        body.appendChild(masonry)
         
-        // // Images Load Js
-        // const imagesLoad = document.createElement('script')
-        // imagesLoad.href = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
-        // body.appendChild(imagesLoad)
+        // Images Load Js
+        const imagesLoad = document.createElement('script')
+        imagesLoad.href = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
+        body.appendChild(imagesLoad)
+        
+        // Bootstrap Js
+        const bootstrap_js = document.createElement('script')
+        bootstrap_js.href = 'assets/vendors/bootstrap/js/bootstrap.min.js';
+        body.appendChild(bootstrap_js)
 
     },1500)
 
