@@ -1,6 +1,7 @@
 window.onload = function () {
 
     const body = document.body;
+    const head = document.head;
 
 
     setTimeout(() => {
@@ -28,7 +29,33 @@ window.onload = function () {
         google_font.rel = 'stylesheet'
         google_font.href = 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap';
 
-        body.appendChild(google_font)
+        head.appendChild(google_font)
+
+        // Google font
+        const font_awesome = document.createElement('link')
+        font_awesome.rel = 'stylesheet'
+        font_awesome.href = 'assets/vendors/fontawesome/css/all.min.css';
+
+        head.appendChild(font_awesome)
+
+        // Counter Up Js
+        const counterup = document.createElement('script')
+        counterup.href = 'assets/vendors/counterup/jquery.counterup.min.js';
+
+        body.appendChild(counterup)
+
+        
+        // Counter Up Js
+        const loop_counter = document.createElement('script')
+        loop_counter.href = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
+
+        body.appendChild(loop_counter)
+        
+        // JQuery UI Js
+        const jquery_ui = document.createElement('script')
+        jquery_ui.href = 'assets/vendors/jquery-ui/jquery-ui.min.js';
+
+        body.appendChild(jquery_ui)
 
 
     }, 5000)
@@ -47,7 +74,7 @@ window.onload = function () {
         const main_style = document.createElement('link')
         main_style.rel = 'stylesheet';
         main_style.href = './assets/css/main_style.min.css';
-        body.appendChild(main_style)
+        head.appendChild(main_style)
 
 
         document.querySelector('.navigation-container ul > li > a').style.fontSize = '16px !important';
