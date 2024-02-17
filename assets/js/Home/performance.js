@@ -4,16 +4,27 @@ window.onload = function () {
     const head = document.head;
 
 
-    // setTimeout(() => {
+    setTimeout(() => {
         
-    //     // Google font
-    //     const ekiticons = document.createElement('link')
-    //     ekiticons.rel = 'stylesheet'
-    //     ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
+        // Ekiticons Css
+        const ekiticons = document.createElement('link')
+        ekiticons.rel = 'stylesheet'
+        ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
 
-    //     body.appendChild(ekiticons)
+        body.appendChild(ekiticons)
 
-    // },1500)
+        
+        // // Masonry Js
+        // const masonry = document.createElement('script')
+        // masonry.href = 'assets/vendors/masonry/masonry.pkgd.min.js';
+        // body.appendChild(masonry)
+        
+        // // Images Load Js
+        // const imagesLoad = document.createElement('script')
+        // imagesLoad.href = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
+        // body.appendChild(imagesLoad)
+
+    },1500)
 
     setTimeout(() => {
         
