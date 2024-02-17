@@ -1,14 +1,10 @@
-const body = document.body;
-const head = document.head;
-const home_trip = document.querySelector('#page')
-home_trip.style.visibility = 'hidden'
 window.onload = function () {
 
+    const body = document.body;
+    const head = document.head;
 
 
     setTimeout(() => {
-
-        home_trip.style.visibility = 'visible'
         
         // Google font
         const ekiticons = document.createElement('link')
@@ -17,12 +13,9 @@ window.onload = function () {
 
         body.appendChild(ekiticons)
 
-
-
     },1500)
 
     setTimeout(() => {
-        
         
         // Font Awesome
         const font_awesome = document.createElement('link')
