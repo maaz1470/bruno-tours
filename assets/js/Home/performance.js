@@ -7,10 +7,12 @@ window.onload = function () {
         // Masonry Js
         const masonry = document.createElement('script')
         masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
+        masonry.async = true
         body.appendChild(masonry)
         
         // Images Load Js
         const imagesLoad = document.createElement('script')
+        masonry.async = true
         imagesLoad.src = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
         body.appendChild(imagesLoad)
         
@@ -42,7 +44,7 @@ window.onload = function () {
         custom_min.src = 'assets/js/custom.min.js';
         body.appendChild(custom_min)
 
-    },6000)
+    },300)
 
     setTimeout(() => {
         
