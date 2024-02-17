@@ -49,6 +49,9 @@ window.onload = function () {
         main_style.href = './assets/css/main_style.min.css';
         body.appendChild(main_style)
 
+
+        document.querySelector('.navigation-container ul > li > a').style.fontSize = '16px !important';
+
     }, 7000)
 
 }
