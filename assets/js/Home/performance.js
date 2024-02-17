@@ -39,6 +39,6 @@ window.onload = function () {
         main_style.href = './assets/css/main_style.min.css';
         body.appendChild(main_style)
 
-    }, 6000)
+    }, 7000)
 
 }
