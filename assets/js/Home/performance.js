@@ -40,7 +40,7 @@ window.onload = function () {
         bootstrap_js.src = 'assets/vendors/bootstrap/js/bootstrap.min.js';
         body.appendChild(bootstrap_js)
 
-        // Bootstrap Js
+        // Fancy box Js
         const fancy_box = document.createElement('script')
         fancy_box.src = 'assets/vendors/fancybox/dist/jquery.fancybox.min.js';
         body.appendChild(fancy_box)
