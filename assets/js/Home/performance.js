@@ -4,16 +4,16 @@ window.onload = function () {
     const head = document.head;
 
 
-    setTimeout(() => {
+    // setTimeout(() => {
         
-        // Google font
-        const ekiticons = document.createElement('link')
-        ekiticons.rel = 'stylesheet'
-        ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
+    //     // Google font
+    //     const ekiticons = document.createElement('link')
+    //     ekiticons.rel = 'stylesheet'
+    //     ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
 
-        body.appendChild(ekiticons)
+    //     body.appendChild(ekiticons)
 
-    },1500)
+    // },1500)
 
     setTimeout(() => {
         
