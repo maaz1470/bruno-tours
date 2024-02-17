@@ -4,6 +4,19 @@ window.onload = function () {
     const head = document.head;
 
     
+        
+        
+
+
+    setTimeout(() => {
+        
+        // Ekiticons Css
+        const ekiticons = document.createElement('link')
+        ekiticons.rel = 'stylesheet'
+        ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
+
+        head.appendChild(ekiticons)
+
         // Masonry Js
         const masonry = document.createElement('script')
         masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
@@ -16,35 +29,19 @@ window.onload = function () {
         imagesLoad.src = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
         body.appendChild(imagesLoad)
         
-        // Bootstrap Js
-        const bootstrap_js = document.createElement('script')
-        bootstrap_js.src = 'assets/vendors/bootstrap/js/bootstrap.min.js';
-        body.appendChild(bootstrap_js)
-
-
-    setTimeout(() => {
-        
-        // Ekiticons Css
-        const ekiticons = document.createElement('link')
-        ekiticons.rel = 'stylesheet'
-        ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
-
-        head.appendChild(ekiticons)
-
-        
-        
 
 
     },1500)
 
     setTimeout(() => {
         
-        // Custom Js
-        const custom_min = document.createElement('script')
-        custom_min.src = 'assets/js/custom.min.js';
-        body.appendChild(custom_min)
+        
+        // Bootstrap Js
+        const bootstrap_js = document.createElement('script')
+        bootstrap_js.src = 'assets/vendors/bootstrap/js/bootstrap.min.js';
+        body.appendChild(bootstrap_js)
 
-    },300)
+    },3000)
 
     setTimeout(() => {
         
