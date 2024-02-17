@@ -3,6 +3,22 @@ window.onload = function () {
     const body = document.body;
     const head = document.head;
 
+    
+        // Masonry Js
+        const masonry = document.createElement('script')
+        masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
+        body.appendChild(masonry)
+        
+        // Images Load Js
+        const imagesLoad = document.createElement('script')
+        imagesLoad.src = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
+        body.appendChild(imagesLoad)
+        
+        // Bootstrap Js
+        const bootstrap_js = document.createElement('script')
+        bootstrap_js.src = 'assets/vendors/bootstrap/js/bootstrap.min.js';
+        body.appendChild(bootstrap_js)
+
 
     setTimeout(() => {
         
@@ -11,25 +27,22 @@ window.onload = function () {
         ekiticons.rel = 'stylesheet'
         ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
 
-        body.appendChild(ekiticons)
+        head.appendChild(ekiticons)
 
         
-        // Masonry Js
-        const masonry = document.createElement('script')
-        masonry.href = 'assets/vendors/masonry/masonry.pkgd.min.js';
-        body.appendChild(masonry)
         
-        // Images Load Js
-        const imagesLoad = document.createElement('script')
-        imagesLoad.href = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
-        body.appendChild(imagesLoad)
-        
-        // Bootstrap Js
-        const bootstrap_js = document.createElement('script')
-        bootstrap_js.href = 'assets/vendors/bootstrap/js/bootstrap.min.js';
-        body.appendChild(bootstrap_js)
+
 
     },1500)
+
+    setTimeout(() => {
+        
+        // Custom Js
+        const custom_min = document.createElement('script')
+        custom_min.src = 'assets/js/custom.min.js';
+        body.appendChild(custom_min)
+
+    },6000)
 
     setTimeout(() => {
         
@@ -60,26 +73,26 @@ window.onload = function () {
 
         // Counter Up Js
         const counterup = document.createElement('script')
-        counterup.href = 'assets/vendors/counterup/jquery.counterup.min.js';
+        counterup.src = 'assets/vendors/counterup/jquery.counterup.min.js';
 
         body.appendChild(counterup)
 
         
         // Loop Counter Js
         const loop_counter = document.createElement('script')
-        loop_counter.href = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
+        loop_counter.src = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
 
         body.appendChild(loop_counter)
         
         // JQuery UI Js
         const jquery_ui = document.createElement('script')
-        jquery_ui.href = 'assets/vendors/jquery-ui/jquery-ui.min.js';
+        jquery_ui.src = 'assets/vendors/jquery-ui/jquery-ui.min.js';
         body.appendChild(jquery_ui)
 
 
         // Way Point Js
         const way_point = document.createElement('script')
-        way_point.href = 'assets/vendors/waypoint/waypoints.js';
+        way_point.src = 'assets/vendors/waypoint/waypoints.js';
 
         body.appendChild(way_point)
 
