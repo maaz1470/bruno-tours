@@ -15,25 +15,25 @@ window.onload = function () {
     },1500)
 
 
-    setTimeout(() => {
+    // setTimeout(() => {
 
         
         
-        // Masonry Js
-        const masonry = document.createElement('script')
-        masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
-        masonry.async = true
-        body.appendChild(masonry)
+    //     // Masonry Js
+    //     const masonry = document.createElement('script')
+    //     masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
+    //     masonry.async = true
+    //     body.appendChild(masonry)
         
-        // Images Load Js
-        const imagesLoad = document.createElement('script')
-        masonry.async = true
-        imagesLoad.src = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
-        body.appendChild(imagesLoad)
+    //     // Images Load Js
+    //     const imagesLoad = document.createElement('script')
+    //     masonry.async = true
+    //     imagesLoad.src = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
+    //     body.appendChild(imagesLoad)
         
 
 
-    },3000)
+    // },3000)
 
     setTimeout(() => {
         
@@ -47,6 +47,12 @@ window.onload = function () {
         const fancy_box = document.createElement('script')
         fancy_box.src = 'assets/vendors/fancybox/dist/jquery.fancybox.min.js';
         body.appendChild(fancy_box)
+
+        // Fancy box Js
+        const fancy_box_css = document.createElement('link')
+        fancy_box_css.rel = 'stylesheet'
+        fancy_box_css.href = 'assets/vendors/fancybox/dist/jquery.fancybox.min.css';
+        body.appendChild(fancy_box_css)
 
     },4000)
 
@@ -94,6 +100,11 @@ window.onload = function () {
         const jquery_ui = document.createElement('script')
         jquery_ui.src = 'assets/vendors/jquery-ui/jquery-ui.min.js';
         body.appendChild(jquery_ui)
+        // JQuery UI css
+        const jquery_ui_css = document.createElement('link')
+        jquery_ui_css.rel = 'stylesheet'
+        jquery_ui_css.href = 'assets/vendors/jquery-ui/jquery-ui.min.css';
+        body.appendChild(jquery_ui_css)
 
 
         // Way Point Js
