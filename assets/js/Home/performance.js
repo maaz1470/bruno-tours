@@ -20,11 +20,6 @@ window.onload = function () {
 
         body.appendChild(google_font)
 
-        // Main Style
-        const main_style = document.createElement('link')
-        main_style.rel = 'stylesheet';
-        main_style.href = './assets/css/main_style.min.css';
-        body.appendChild(main_style)
 
     }, 5000)
 
@@ -35,5 +30,15 @@ window.onload = function () {
 
         gtag('config', 'UA-18825843-1');
     }, 5200)
+
+    setTimeout(() => {
+
+        // Main Style
+        const main_style = document.createElement('link')
+        main_style.rel = 'stylesheet';
+        main_style.href = './assets/css/main_style.min.css';
+        body.appendChild(main_style)
+
+    }, 6000)
 
 }
