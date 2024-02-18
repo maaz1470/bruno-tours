@@ -47,6 +47,51 @@ window.onload = function () {
         jquery_ui_css.href = 'assets/vendors/jquery-ui/jquery-ui.min.css';
         body.appendChild(jquery_ui_css)
 
+
+
+        // Google Tag Manager
+        const g_tag_manager = document.createElement('script')
+        g_tag_manager.src = 'https://www.googletagmanager.com/gtag/js?id=UA-18825843-1';
+        body.appendChild(g_tag_manager)
+
+
+        // Google font
+        const google_font = document.createElement('link')
+        google_font.rel = 'stylesheet'
+        google_font.href = 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap';
+
+        head.appendChild(google_font)
+
+        // Counter Up Js
+        const counterup = document.createElement('script')
+        counterup.src = 'assets/vendors/counterup/jquery.counterup.min.js';
+
+        body.appendChild(counterup)
+
+        
+        // Loop Counter Js
+        const loop_counter = document.createElement('script')
+        loop_counter.src = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
+
+        body.appendChild(loop_counter)
+        
+
+
+        // Way Point Js
+        const way_point = document.createElement('script')
+        way_point.src = 'assets/vendors/waypoint/waypoints.js';
+
+        body.appendChild(way_point)
+
+
+        
+        // Font Awesome
+        const font_awesome = document.createElement('link')
+        font_awesome.rel = 'stylesheet'
+        font_awesome.href = 'assets/vendors/fontawesome/css/all.min.css';
+
+        head.appendChild(font_awesome)
+
         
 
     }
@@ -99,56 +144,56 @@ window.onload = function () {
 
 
 
-    setTimeout(() => {
+    // setTimeout(() => {
         
-        // Font Awesome
-        const font_awesome = document.createElement('link')
-        font_awesome.rel = 'stylesheet'
-        font_awesome.href = 'assets/vendors/fontawesome/css/all.min.css';
+    //     // Font Awesome
+    //     const font_awesome = document.createElement('link')
+    //     font_awesome.rel = 'stylesheet'
+    //     font_awesome.href = 'assets/vendors/fontawesome/css/all.min.css';
 
-        head.appendChild(font_awesome)
+    //     head.appendChild(font_awesome)
 
-    }, 1000)
-
-
-    setTimeout(() => {
-
-        // Google Tag Manager
-        const g_tag_manager = document.createElement('script')
-        g_tag_manager.src = 'https://www.googletagmanager.com/gtag/js?id=UA-18825843-1';
-        body.appendChild(g_tag_manager)
+    // }, 1000)
 
 
-        // Google font
-        const google_font = document.createElement('link')
-        google_font.rel = 'stylesheet'
-        google_font.href = 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap';
+    // setTimeout(() => {
 
-        head.appendChild(google_font)
+    //     // Google Tag Manager
+    //     const g_tag_manager = document.createElement('script')
+    //     g_tag_manager.src = 'https://www.googletagmanager.com/gtag/js?id=UA-18825843-1';
+    //     body.appendChild(g_tag_manager)
 
-        // Counter Up Js
-        const counterup = document.createElement('script')
-        counterup.src = 'assets/vendors/counterup/jquery.counterup.min.js';
 
-        body.appendChild(counterup)
+    //     // Google font
+    //     const google_font = document.createElement('link')
+    //     google_font.rel = 'stylesheet'
+    //     google_font.href = 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap';
+
+    //     head.appendChild(google_font)
+
+    //     // Counter Up Js
+    //     const counterup = document.createElement('script')
+    //     counterup.src = 'assets/vendors/counterup/jquery.counterup.min.js';
+
+    //     body.appendChild(counterup)
 
         
-        // Loop Counter Js
-        const loop_counter = document.createElement('script')
-        loop_counter.src = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
+    //     // Loop Counter Js
+    //     const loop_counter = document.createElement('script')
+    //     loop_counter.src = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
 
-        body.appendChild(loop_counter)
+    //     body.appendChild(loop_counter)
         
 
 
-        // Way Point Js
-        const way_point = document.createElement('script')
-        way_point.src = 'assets/vendors/waypoint/waypoints.js';
+    //     // Way Point Js
+    //     const way_point = document.createElement('script')
+    //     way_point.src = 'assets/vendors/waypoint/waypoints.js';
 
-        body.appendChild(way_point)
+    //     body.appendChild(way_point)
 
 
-    }, 7000)
+    // }, 7000)
 
     setTimeout(() => {
         window.dataLayer = window.dataLayer || [];
