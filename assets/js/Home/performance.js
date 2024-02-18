@@ -4,22 +4,22 @@ window.onload = function () {
     const head = document.head;
 
 
-    function pkdg_load(){
-           
-        
+    function pkdg_load() {
+
+
         // Masonry Js
         const masonry = document.createElement('script')
         masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
         masonry.async = true
         body.appendChild(masonry)
-        
+
         // Images Load Js
         const imagesLoad = document.createElement('script')
         masonry.async = true
         imagesLoad.src = './assets/js/pkgd.js';
         body.appendChild(imagesLoad)
 
-        
+
         // Bootstrap Js
         const bootstrap_js = document.createElement('script')
         bootstrap_js.src = 'assets/vendors/bootstrap/js/bootstrap.min.js';
@@ -36,7 +36,7 @@ window.onload = function () {
         fancy_box.src = 'assets/vendors/fancybox/dist/jquery.fancybox.min.js';
         body.appendChild(fancy_box)
 
-        
+
         // JQuery UI Js
         const jquery_ui = document.createElement('script')
         jquery_ui.src = 'assets/vendors/jquery-ui/jquery-ui.min.js';
@@ -68,13 +68,13 @@ window.onload = function () {
 
         body.appendChild(counterup)
 
-        
+
         // Loop Counter Js
         const loop_counter = document.createElement('script')
         loop_counter.src = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
 
         body.appendChild(loop_counter)
-        
+
 
 
         // Way Point Js
@@ -84,7 +84,7 @@ window.onload = function () {
         body.appendChild(way_point)
 
 
-        
+
         // Font Awesome
         const font_awesome = document.createElement('link')
         font_awesome.rel = 'stylesheet'
@@ -92,20 +92,21 @@ window.onload = function () {
 
         head.appendChild(font_awesome)
 
-        
+
 
     }
 
-    window.addEventListener('scroll',function(){
-        if(!window.rh){
-            if(window.scrollY > 1500){
+    window.addEventListener('scroll', function () {
+        if (!window.rh) {
+            if (window.scrollY > 1500) {
                 window.rh = true;
                 pkdg_load();
 
                 load_image();
+                load_g_tag();
             }
         }
-        
+
     })
 
     // const interval = setInterval(() => {
@@ -117,22 +118,31 @@ window.onload = function () {
     //     }
     //  },100)
 
-     function load_image(){
+    function load_image() {
         setTimeout(() => {
-               /* masonry */
-               var $grid = $(".grid").imagesLoaded(function() {
+            /* masonry */
+            var $grid = $(".grid").imagesLoaded(function () {
                 $grid.masonry({
-                itemSelector: '.grid-item',
-                percentPosition: true,
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
                 });
             });
-        },1000)
-     }
+        }, 1000)
+    }
+    function load_g_tag() {
+        setTimeout(() => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-    
+            gtag('config', 'UA-18825843-1');
+        }, 1000)
+    }
+
+
 
     setTimeout(() => {
-        
+
         // Ekiticons Css
         const ekiticons = document.createElement('link')
         ekiticons.rel = 'stylesheet'
@@ -140,12 +150,12 @@ window.onload = function () {
 
         head.appendChild(ekiticons)
 
-    },1500)
+    }, 1500)
 
 
 
     // setTimeout(() => {
-        
+
     //     // Font Awesome
     //     const font_awesome = document.createElement('link')
     //     font_awesome.rel = 'stylesheet'
@@ -177,13 +187,13 @@ window.onload = function () {
 
     //     body.appendChild(counterup)
 
-        
+
     //     // Loop Counter Js
     //     const loop_counter = document.createElement('script')
     //     loop_counter.src = 'assets/vendors/countdown-date-loop-counter/loopcounter.js';
 
     //     body.appendChild(loop_counter)
-        
+
 
 
     //     // Way Point Js
@@ -195,25 +205,25 @@ window.onload = function () {
 
     // }, 7000)
 
-    setTimeout(() => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    // setTimeout(() => {
+    //     window.dataLayer = window.dataLayer || [];
+    //     function gtag() { dataLayer.push(arguments); }
+    //     gtag('js', new Date());
 
-        gtag('config', 'UA-18825843-1');
-    }, 7200)
+    //     gtag('config', 'UA-18825843-1');
+    // }, 7200)
 
-    setTimeout(() => {
+    // setTimeout(() => {
 
-        // Main Style
-        const main_style = document.createElement('link')
-        main_style.rel = 'stylesheet';
-        main_style.href = './assets/css/main_style.min.css';
-        head.appendChild(main_style)
+    //     // Main Style
+    //     const main_style = document.createElement('link')
+    //     main_style.rel = 'stylesheet';
+    //     main_style.href = './assets/css/main_style.min.css';
+    //     head.appendChild(main_style)
 
 
-        document.querySelector('.navigation-container ul > li > a').style.fontSize = '16px !important';
+    //     document.querySelector('.navigation-container ul > li > a').style.fontSize = '16px !important';
 
-    }, 7000)
+    // }, 1000)
 
 }
