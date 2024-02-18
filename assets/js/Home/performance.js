@@ -3,6 +3,78 @@ window.onload = function () {
     const body = document.body;
     const head = document.head;
 
+
+    function pkdg_load(){
+           
+        
+        // Masonry Js
+        const masonry = document.createElement('script')
+        masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
+        masonry.async = true
+        body.appendChild(masonry)
+        
+        // Images Load Js
+        const imagesLoad = document.createElement('script')
+        masonry.async = true
+        imagesLoad.src = './assets/js/pkgd.js';
+        body.appendChild(imagesLoad)
+
+        
+        // Bootstrap Js
+        const bootstrap_js = document.createElement('script')
+        bootstrap_js.src = 'assets/vendors/bootstrap/js/bootstrap.min.js';
+        body.appendChild(bootstrap_js)
+
+        // Fancy box Js
+        const fancy_box_css = document.createElement('link')
+        fancy_box_css.rel = 'stylesheet'
+        fancy_box_css.href = 'assets/vendors/fancybox/dist/jquery.fancybox.min.css';
+        body.appendChild(fancy_box_css)
+
+        // Fancy box Js
+        const fancy_box = document.createElement('script')
+        fancy_box.src = 'assets/vendors/fancybox/dist/jquery.fancybox.min.js';
+        body.appendChild(fancy_box)
+
+        
+
+    }
+
+    window.addEventListener('scroll',function(){
+        if(!window.rh){
+            if(window.scrollY > 1500){
+                window.rh = true;
+                pkdg_load();
+
+                load_image();
+            }
+        }
+        
+    })
+
+    // const interval = setInterval(() => {
+    //     if(window.rh){
+    //        load_image();
+    //        clearInterval(interval) 
+    //     }else{
+    //        console.log('nai')
+    //     }
+    //  },100)
+
+     function load_image(){
+        setTimeout(() => {
+               /* masonry */
+               var $grid = $(".grid").imagesLoaded(function() {
+                $grid.masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                });
+            });
+        },1000)
+     }
+
+    
+
     setTimeout(() => {
         
         // Ekiticons Css
@@ -15,46 +87,6 @@ window.onload = function () {
     },1500)
 
 
-    // setTimeout(() => {
-
-        
-        
-    //     // Masonry Js
-    //     const masonry = document.createElement('script')
-    //     masonry.src = 'assets/vendors/masonry/masonry.pkgd.min.js';
-    //     masonry.async = true
-    //     body.appendChild(masonry)
-        
-    //     // Images Load Js
-    //     const imagesLoad = document.createElement('script')
-    //     masonry.async = true
-    //     imagesLoad.src = 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js';
-    //     body.appendChild(imagesLoad)
-        
-
-
-    // },3000)
-
-    setTimeout(() => {
-        
-        
-        // Bootstrap Js
-        const bootstrap_js = document.createElement('script')
-        bootstrap_js.src = 'assets/vendors/bootstrap/js/bootstrap.min.js';
-        body.appendChild(bootstrap_js)
-
-        // Fancy box Js
-        const fancy_box = document.createElement('script')
-        fancy_box.src = 'assets/vendors/fancybox/dist/jquery.fancybox.min.js';
-        body.appendChild(fancy_box)
-
-        // Fancy box Js
-        const fancy_box_css = document.createElement('link')
-        fancy_box_css.rel = 'stylesheet'
-        fancy_box_css.href = 'assets/vendors/fancybox/dist/jquery.fancybox.min.css';
-        body.appendChild(fancy_box_css)
-
-    },4000)
 
     setTimeout(() => {
         
