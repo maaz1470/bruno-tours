@@ -37,6 +37,17 @@ window.onload = function () {
         body.appendChild(fancy_box)
 
         
+        // JQuery UI Js
+        const jquery_ui = document.createElement('script')
+        jquery_ui.src = 'assets/vendors/jquery-ui/jquery-ui.min.js';
+        body.appendChild(jquery_ui)
+        // JQuery UI css
+        const jquery_ui_css = document.createElement('link')
+        jquery_ui_css.rel = 'stylesheet'
+        jquery_ui_css.href = 'assets/vendors/jquery-ui/jquery-ui.min.css';
+        body.appendChild(jquery_ui_css)
+
+        
 
     }
 
@@ -97,7 +108,7 @@ window.onload = function () {
 
         head.appendChild(font_awesome)
 
-    }, 2500)
+    }, 1000)
 
 
     setTimeout(() => {
@@ -128,15 +139,6 @@ window.onload = function () {
 
         body.appendChild(loop_counter)
         
-        // JQuery UI Js
-        const jquery_ui = document.createElement('script')
-        jquery_ui.src = 'assets/vendors/jquery-ui/jquery-ui.min.js';
-        body.appendChild(jquery_ui)
-        // JQuery UI css
-        const jquery_ui_css = document.createElement('link')
-        jquery_ui_css.rel = 'stylesheet'
-        jquery_ui_css.href = 'assets/vendors/jquery-ui/jquery-ui.min.css';
-        body.appendChild(jquery_ui_css)
 
 
         // Way Point Js
@@ -146,7 +148,7 @@ window.onload = function () {
         body.appendChild(way_point)
 
 
-    }, 5000)
+    }, 7000)
 
     setTimeout(() => {
         window.dataLayer = window.dataLayer || [];
@@ -154,7 +156,7 @@ window.onload = function () {
         gtag('js', new Date());
 
         gtag('config', 'UA-18825843-1');
-    }, 5200)
+    }, 7200)
 
     setTimeout(() => {
 
