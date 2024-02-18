@@ -3,6 +3,13 @@ window.onload = function () {
     const body = document.body;
     const head = document.head;
 
+    
+        // Slick CSS
+        const slick_theme = document.createElement('link')
+        slick_theme.rel = 'stylesheet'
+        slick_theme.href = 'assets/vendors/slick/slick-theme.css';
+        head.appendChild(slick_theme)
+
 
     function pkdg_load() {
 
@@ -29,7 +36,7 @@ window.onload = function () {
         const fancy_box_css = document.createElement('link')
         fancy_box_css.rel = 'stylesheet'
         fancy_box_css.href = 'assets/vendors/fancybox/dist/jquery.fancybox.min.css';
-        body.appendChild(fancy_box_css)
+        head.appendChild(fancy_box_css)
 
         // Fancy box Js
         const fancy_box = document.createElement('script')
@@ -85,12 +92,6 @@ window.onload = function () {
 
 
 
-        // Font Awesome
-        const font_awesome = document.createElement('link')
-        font_awesome.rel = 'stylesheet'
-        font_awesome.href = 'assets/vendors/fontawesome/css/all.min.css';
-
-        head.appendChild(font_awesome)
 
 
 
@@ -149,6 +150,14 @@ window.onload = function () {
         ekiticons.href = 'assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css';
 
         head.appendChild(ekiticons)
+
+        
+        // Font Awesome
+        const font_awesome = document.createElement('link')
+        font_awesome.rel = 'stylesheet'
+        font_awesome.href = 'assets/vendors/fontawesome/css/all.min.css';
+
+        head.appendChild(font_awesome)
 
     }, 1000)
 
