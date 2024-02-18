@@ -150,7 +150,7 @@ window.onload = function () {
 
         head.appendChild(ekiticons)
 
-    }, 1500)
+    }, 1000)
 
 
 
