@@ -170,17 +170,6 @@ $("#backTotop").click(function(e) {
   $("html, body").animate({scrollTop: 0}, 100);
 });
 
-/* preloader */
-$( window ).on( "load", function() {
-  $( '#siteLoader' ).fadeOut( 500 );
-  /* masonry */
-  var $grid = $(".grid").imagesLoaded(function() {
-    $grid.masonry({
-      itemSelector: '.grid-item',
-      percentPosition: true,
-    });
-  });
-});
 
 
 })( jQuery );
