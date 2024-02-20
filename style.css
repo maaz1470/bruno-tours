@@ -6811,5 +6811,8 @@ trevi-fountain-and-virgin-acqueduct-undergrounds-tourtrevi-fountain-and-virgin-a
   right: 0;
   margin: auto;
 }
+#siteLoader{
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
