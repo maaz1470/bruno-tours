@@ -94,12 +94,10 @@ window.onload = function () {
     }
 
     window.addEventListener('scroll', function () {
-        console.log(window.scrollY)
         if (!window.rh) {
             if (window.scrollY > 10) {
                 window.rh = true;
                 pkdg_load();
-
                 load_image();
                 load_g_tag();
             }
